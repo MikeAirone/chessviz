@@ -24,7 +24,7 @@ build/board.o: scr/board.c scr/board.h scr/board_print.h scr/board_print_plain.h
 	$(CXX) $(CFLAGS) scr/board.c -o build/board.o 
 
 build/board_print_plain.o: scr/board_print_plain.c scr/board.h scr/board_print.h scr/board_print_plain.h scr/input.h
-	$(CXX) $(CFLAGS) src/board_print_plain.c -o build/board_print_plain.o
+	$(CXX) $(CFLAGS) scr/board_print_plain.c -o build/board_print_plain.o
 
 build/board_print.o: scr/board_print.c scr/board.h scr/board_print.h scr/board_print_plain.h scr/input.h
 	$(CXX) $(CFLAGS) scr/board_print.c -o build/board_print.o
