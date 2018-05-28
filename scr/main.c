@@ -9,7 +9,7 @@ int main()
 	while (1)
 	{
 		printDeck(deck);
-		check(deck);
+		check(deck,0);
 	}	
 	return 0;
 
