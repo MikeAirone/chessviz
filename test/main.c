@@ -23,7 +23,7 @@ CTEST(Syntax, Incorrect)
 CTEST(Pawn, Correct) 
 {
     	board_print(deck);
-    	char move[4]="a2a4";
+    	char move[]="a2a4";
 	int moveint [4];   
 	input(move, moveint);
     	int result = pawn(deck, moveint);
@@ -34,7 +34,7 @@ CTEST(Pawn, Correct)
 CTEST(Pawn, Incorrect) 
 {
     	board_print(deck);
-    	char move[4]="a2a5";
+    	char move[]="a2a5";
 	int moveint [4];    
 	input(move, moveint);
     	int result = pawn(deck, moveint);
@@ -46,7 +46,7 @@ CTEST(Pawn, Incorrect)
 CTEST (Check_Figure, Correct)
 {
 	board_print(deck);
-    	char move[4]="a2a5";
+    	char move[]="a2a5";
 	int moveint [4];    
 	input(move, moveint);
 	int result = check_figure(deck, moveint);
@@ -57,7 +57,7 @@ CTEST (Check_Figure, Correct)
 CTEST (Check_Figure, Incorrect)
 {
   	board_print(deck);
-    	char move[4]="a5a6";
+    	char move[]="a5a6";
 	int moveint [4];   
 	input(move, moveint);
 	int result = check_figure(deck, moveint);
@@ -67,7 +67,7 @@ CTEST (Check_Figure, Incorrect)
 CTEST(Pawn1, Correct) 
 {
     	board_print(deck);
-    	char move[4]="a7a5";
+    	char move[]="a7a5";
 	int moveint [4];    
 	input(move, moveint);
     	int result = PAWN(deck, moveint);
@@ -78,7 +78,7 @@ CTEST(Pawn1, Correct)
 CTEST(Pawn1, Incorrect) 
 {
    	board_print(deck);
-   	char move[4]="a7a3";
+   	char move[]="a7a3";
 	int moveint [4];    
 	input(move, moveint);
     	int result = PAWN(deck, moveint);
